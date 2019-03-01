@@ -12,6 +12,8 @@
 		F859A8352228DA28000EB5F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F859A8332228DA28000EB5F5 /* Main.storyboard */; };
 		F859A8372228DA29000EB5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F859A8362228DA29000EB5F5 /* Assets.xcassets */; };
 		F859A83A2228DA29000EB5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F859A8382228DA29000EB5F5 /* LaunchScreen.storyboard */; };
+		F859A8462228DE6B000EB5F5 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859A8452228DE6B000EB5F5 /* Sign.swift */; };
+		F859A8482228DF55000EB5F5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859A8472228DF55000EB5F5 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F859A8362228DA29000EB5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F859A8392228DA29000EB5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F859A83B2228DA29000EB5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F859A8452228DE6B000EB5F5 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		F859A8472228DF55000EB5F5 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		F859A82E2228DA28000EB5F5 /* RPS */ = {
 			isa = PBXGroup;
 			children = (
-				F859A82F2228DA28000EB5F5 /* AppDelegate.swift */,
-				F859A8312228DA28000EB5F5 /* ViewController.swift */,
-				F859A8332228DA28000EB5F5 /* Main.storyboard */,
+				F859A8412228DE1C000EB5F5 /* Models */,
+				F859A8442228DE3D000EB5F5 /* Views */,
+				F859A8432228DE36000EB5F5 /* Controlls */,
+				F859A8422228DE2A000EB5F5 /* Support Files */,
 				F859A8362228DA29000EB5F5 /* Assets.xcassets */,
-				F859A8382228DA29000EB5F5 /* LaunchScreen.storyboard */,
-				F859A83B2228DA29000EB5F5 /* Info.plist */,
 			);
 			path = RPS;
+			sourceTree = "<group>";
+		};
+		F859A8412228DE1C000EB5F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F859A8452228DE6B000EB5F5 /* Sign.swift */,
+				F859A8472228DF55000EB5F5 /* GameState.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F859A8422228DE2A000EB5F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F859A82F2228DA28000EB5F5 /* AppDelegate.swift */,
+				F859A83B2228DA29000EB5F5 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		F859A8432228DE36000EB5F5 /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				F859A8312228DA28000EB5F5 /* ViewController.swift */,
+			);
+			name = Controlls;
+			sourceTree = "<group>";
+		};
+		F859A8442228DE3D000EB5F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F859A8332228DA28000EB5F5 /* Main.storyboard */,
+				F859A8382228DA29000EB5F5 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F859A8322228DA28000EB5F5 /* ViewController.swift in Sources */,
+				F859A8482228DF55000EB5F5 /* GameState.swift in Sources */,
 				F859A8302228DA28000EB5F5 /* AppDelegate.swift in Sources */,
+				F859A8462228DE6B000EB5F5 /* Sign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
